@@ -1,20 +1,35 @@
-const IssueItem = ({ issue }) => {
-  return (
-    <div className="item">
-      <i className="large github middle aligned icon"></i>
-      <div className="content">
-        <a
-          className="header"
-          href={issue.html_url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {issue.title}
-        </a>
-        <div className="description">{issue.description}</div>
-      </div>
-    </div>
-  );
-};
+import { Link, useLocation } from 'react-router-dom';
 
-export default IssueItem;
+const Navbar = () => {
+    const location = useLocation().pathname;
+    return (
+        <nav className='header-back navbar navbar-expand-xl'>
+            <button className='navbar-toggler border border-light ' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+                <span className='navbar-toggler-icon'></span>
+            </button>
+
+            <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+                {/* <section className='top'> */}
+                    <ul className='navbar-nav navbar'>
+                        <li className='nav-item px-2'>
+                            <Link to='/' className={location === '/' ? 'title2' : 'title1'}>Home</Link>
+                        </li>
+                        <li className='nav-item px-2'>
+                            <Link to='/Movies' className={location === '/Movies' ? 'title2' : 'title1'}>Movie Database</Link>
+                        </li>
+                        <li className='nav-item px-2'>
+                            <Link to='/Groups' className={location === '/Groups' ? 'title2' : 'title1'}>Groups</Link>
+                        </li>
+                        <li className='nav-item px-2'>
+                            <Link to='/Mymovies' className={location === '/Mymovies' ? 'title2' : 'title1'}>My Movies</Link>
+                        </li>
+                        <li className='nav-item px-2'>
+                            <Link to='/Login'><button className='btn btn-outline-light'>Login</button></Link>
+                        </li>
+                    </ul>
+                {/* </section > */}
+            </div>
+        </nav >
+    )
+};
+export default Navbar;

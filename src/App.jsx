@@ -1,7 +1,7 @@
 // We import useContext to have access to the context.
 import { useState, useEffect, useContext } from 'react';
-import SearchBar from './components/SearchBar';
-import IssueList from './components/IssueList';
+
+import Navbar from './components/Navbar';
 // We import the ThemeContext so we can use the theme and toggleTheme functions.
 import { ThemeContext } from './components/ThemeContext';
 
