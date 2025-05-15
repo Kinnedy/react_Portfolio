@@ -1,29 +1,21 @@
-import { useState } from 'react';
+import Navbar from './Navbar'
 
-function SearchBar({ onFormSubmit }) {
-  const [term, setTerm] = useState('microsoft/vscode');
 
-  const sendTerm = (e) => {
-    e.preventDefault();
 
-    onFormSubmit(term);
-  };
+const Header = () => {
+    return (
+        <header>
+            <div className='header-back title'>
+                <h1 className=' title2'>Just <span className='title1'>Watch</span> It</h1>
+                <img src={logo} className='title-img ms-3' />
+            </div>
 
-  return (
-    <div className="search-bar ui segment">
-      <form className="ui form" onSubmit={sendTerm}>
-        <div className="field">
-          <label>Retrieve GitHub Issues</label>
-          <input
-            type="text"
-            value={term}
-            onChange={({ target }) => setTerm(target.value)}
-            placeholder="facebook/react"
-          />
-        </div>
-      </form>
-    </div>
-  );
+            <div>
+                <Navbar />
+            </div>
+
+        </header>
+    )
 }
 
-export default SearchBar;
+export default Header

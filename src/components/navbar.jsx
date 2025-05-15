@@ -15,16 +15,16 @@ const Navbar = () => {
                             <Link to='/' className={location === '/' ? 'title2' : 'title1'}>Home</Link>
                         </li>
                         <li className='nav-item px-2'>
-                            <Link to='/Movies' className={location === '/Movies' ? 'title2' : 'title1'}>Movie Database</Link>
+                            <Link to='/aboutMe' className={location === '/aboutMe' ? 'title2' : 'title1'}>About Me</Link>
                         </li>
                         <li className='nav-item px-2'>
-                            <Link to='/Groups' className={location === '/Groups' ? 'title2' : 'title1'}>Groups</Link>
+                            <Link to='/portfolio' className={location === '/portfolio' ? 'title2' : 'title1'}>Portfolio</Link>
                         </li>
                         <li className='nav-item px-2'>
-                            <Link to='/Mymovies' className={location === '/Mymovies' ? 'title2' : 'title1'}>My Movies</Link>
+                            <Link to='/resume' className={location === '/resume' ? 'title2' : 'title1'}>Resume</Link>
                         </li>
                         <li className='nav-item px-2'>
-                            <Link to='/Login'><button className='btn btn-outline-light'>Login</button></Link>
+                            <Link to='/contacts'><button className='btn btn-outline-light'>contacts</button></Link>
                         </li>
                     </ul>
                 {/* </section > */}
