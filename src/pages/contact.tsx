@@ -1,14 +1,16 @@
 import React from 'react';
+import ContactForm from '../components/ContactForm';
+import Footer from '../components/Footer';
 
 function Contact() {
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
-      <p>Email: taylorkinnedy@gmail.co,</p>
-      <p>Phone: (123) 456-7890</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/yourname" className="text-blue-600 underline">yourname</a></p>
-      <p>GitHub: <a href=" https://github.com/Kinnedy" className="text-blue-600 underline">Kinnedy</a></p>
-    div
+  <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
+      <p className="mb-4">I'd love to hear from you!</p>
+      <ContactForm />
+      <p className="mt-4">Feel free to reach out!</p>
+      <Footer />
+  </div>
   );
 }
 

@@ -1,4 +1,4 @@
-# The Generator![license](https://img.shields.io/badge/license-mit-blue)
+# The React Portfolio![license](https://img.shields.io/badge/license-mit-blue)
  
 ## Description
 this project builds a professional README for future projects
@@ -12,21 +12,21 @@ this project builds a professional README for future projects
 6. [questions](#questions)
 
 ## Installation
-You will need to have node.js installed on your vs coder.
+You will need to have node.js, typescript, and react installed on your computor.
 
 ## Usage
-It's used to generate a README by integating the termminal and calling node.js. follow question prompts and fill out project name, descriptin of project, install instructions, how to use it,   license  information , etc
+this website uses reusable componenets to build a portfolio to help future employers see coding work.
 
 ## License
 This project is licensed under the [MIT]([license](https://opensource.org/licenses/MIT)) license.
 
 ## Contribution
-can contribute by using it to create a professional README for projects
+can search through information to find
 
 ## Tests
 none required
 
 ## Questions
 email [taylorkinnedy@gmail.com](taylorkinnedy@gmail.com)
-github [www.github.com/undefined](www.github.com/undefined)
+github [www.github.com/undefined](www.github.com/kinnedy/react-portfolio)
 

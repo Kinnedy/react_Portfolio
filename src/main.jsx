@@ -1,10 +1,46 @@
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import { ThemeProvider } from './components/ThemeContext.jsx'
-import './index.css'
+import ReactDOM from 'react-dom/client';
+// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
+import { createBrowserRouter, RouterProvider} from 'react-router-dom';
+import App from './App';
+import Error from './pages/Error';
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+
+
+// Define the accessible routes, and which components respond to which URL
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <AboutMe />,
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
+      },
+        {
+         path: '/resume',
+         element: <Resume />,  
+        },
+    ],
+  },
+]);
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>
-)
+  <RouterProvider router={router} />
+
+);
+
+export default router;
+

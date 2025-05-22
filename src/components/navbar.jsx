@@ -10,12 +10,9 @@ const Navbar = () => {
 
             <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 {/* <section className='top'> */}
-                    <ul className='navbar-nav navbar'>
+                    <ul className='navbar-nav navbar d-flex' >
                         <li className='nav-item px-2'>
-                            <Link to='/' className={location === '/' ? 'title2' : 'title1'}>Home</Link>
-                        </li>
-                        <li className='nav-item px-2'>
-                            <Link to='/aboutMe' className={location === '/aboutMe' ? 'title2' : 'title1'}>About Me</Link>
+                            <Link to='/' className={location === '/' ? 'title2' : 'title1'}>About Me</Link>
                         </li>
                         <li className='nav-item px-2'>
                             <Link to='/portfolio' className={location === '/portfolio' ? 'title2' : 'title1'}>Portfolio</Link>
@@ -24,7 +21,7 @@ const Navbar = () => {
                             <Link to='/resume' className={location === '/resume' ? 'title2' : 'title1'}>Resume</Link>
                         </li>
                         <li className='nav-item px-2'>
-                            <Link to='/contacts'><button className='btn btn-outline-light'>contacts</button></Link>
+                            <Link to='/contact'><button className='btn btn-outline-light'>contacts</button></Link>
                         </li>
                     </ul>
                 {/* </section > */}
